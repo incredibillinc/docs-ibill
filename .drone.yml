@@ -27,3 +27,20 @@ steps:
       - pip install mkdocs mkdocs-material mkdocs-link-check
       - mkdocs build --strict
       - mkdocs-link-check --config mkdocs.yml
+
+  - name: notify n8n
+    image: curlimages/curl
+    # only run this after everything else, on either success or failure
+    when:
+      status:
+        - success
+        - failure
+    commands:
+      - curl -X POST 'https://n8n.ispnet.work/webhook/drone-build-complete'
+        -H 'Content-Type: application/json'
+        -d '{
+          "repo": "${DRONE_REPO}",
+          "branch": "${DRONE_BRANCH}",
+          "status": "${DRONE_BUILD_STATUS}",
+          "buildUrl": "${DRONE_BUILD_LINK}"
+        }'
