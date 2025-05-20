@@ -36,7 +36,8 @@ steps:
         - success
         - failure
     commands:
-      - curl -X POST 'https://n8n.ispnet.work/webhook/drone-build-complete'
+      - >
+        curl -X POST 'https://n8n.ispnet.work/webhook/drone-build-complete'
         -H 'Content-Type: application/json'
         -d '{
           "repo": "${DRONE_REPO}",
