@@ -1,0 +1,102 @@
+site_name: iBill.io user documentation
+site_description: iBill.io user documentation
+site_author: iBill Helpdesk
+repo_url: https://gibson.ispnet.work/Incredibill/ibill-helpdesk
+repo_name: ibill-helpdesk
+nav:
+  - Home: index.md
+  - Admins:
+      - Adding a New Admin: Admins/adding-a-new-admin.md
+      - Adding Administrators: Admins/adding-administrators.md
+      - Adding Groups: Admins/adding-groups.md
+      - Managing Administrators: Admins/managing-administrators.md
+      - Managing Admins: Admins/managing-admins.md
+      - Managing Groups: Admins/managing-groups.md
+  - Audit Log:
+      - Audit Log: Audit Log/audit-log.md
+  - Customers:
+      - Add a New Customer: Customers/add-a-new-customer.md
+      - Managing Users: Customers/managing-users.md
+  - Dashboard:
+      - Overview of the Main Dashboard: Dashboard/overview-of-the-main-dashboard.md
+  - Hotspot:
+      - Manage Vouchers: Hotspot/hotpot-manage-vouchers.md
+      - Hotspots: Hotspot/hotspots.md
+  - Invoices:
+      - Managing Invoices: Invoices/managing-invoices.md
+      - Viewing and Editing an Invoice: Invoices/viewing-and-editing-an-invoice.md
+  - Network Map:
+      - Network Map: Network Map/network-map.md
+  - Payments:
+      - Manage Credits: Payments/manage-credits.md
+      - Manage Payments: Payments/manage-payments.md
+      - Manage Transactions: Payments/manage-transactions.md
+  - Products:
+      - Adding New Products: Products/adding-new-products.md
+      - Creating a Data Service Product: Products/creating-a-data-service-product.md
+      - Creating a Data Topup Product: Products/creating-a-data-topup-product.md
+      - Creating a Generic Product: Products/creating-a-generic-product.md
+      - Creating a Static IP Product: Products/creating-a-static-ip-product.md
+      - Creating a Static Netblock Product: Products/creating-a-static-netblock-product.md
+      - Creating a VoIP Service: Products/creating-a-voip-service.md
+      - Managing Products: Products/managing-products.md
+  - Quotes:
+      - Adding a New Quote: Quotes/adding-a-new-quote.md
+      - Managing Quotes: Quotes/managing-quotes.md
+  - Radius:
+      - Add a New NAS: Radius/add-a-new-nas.md
+      - Managing IP Pools: Radius/managing-ip-pools.md
+      - Managing NAS Devices: Radius/managing-nas-devices.md
+      - Managing Netblock Pools: Radius/managing-netblock-pools.md
+      - Viewing Active Sessions: Radius/viewing-active-sessions.md
+      - Viewing the Session History: Radius/viewing-the-session-history.md
+  - Reporting:
+      - Reporting: Reporting/reporting.md
+  - Resellers:
+      - Adding a New Reseller: Resellers/adding-a-new-reseller.md
+      - Manage Resellers: Resellers/manage-resellers.md
+      - Reseller Payments: Resellers/reseller-payments.md
+  - Services:
+      - Adding a New Service: Services/adding-a-new-service.md
+      - Managing Services: Services/managing-services.md
+  - Setup:
+      - Account Settings: Setup/account-settings.md
+      - Client Portal: Setup/client-portal.md
+      - FX Rates: Setup/fx-rates.md
+      - General Settings: Setup/general-settings.md
+      - Payments: Setup/payments.md
+      - Reseller Portal: Setup/reseller-portal.md
+      - Templates: Setup/templates.md
+theme:
+  name: material
+  logo: assets/logo.png  # Place your logo in docs/assets/logo.gif
+  favicon: assets/favicon.png  # Place your favicon in docs/assets/favicon.png
+  palette:
+    - scheme: default
+      primary: blue  # Use a built-in color name, will be overridden by CSS
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    # Removed navigation.tabs and navigation.top for sidebar navigation
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - header.autohide
+    - announce.dismiss
+extra_css:
+  - styles/extra.css
+plugins:
+  - search
