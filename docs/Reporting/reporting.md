@@ -1,3 +1,53 @@
 # Reporting
 
-<h2>Reporting</h2><p>This section allows you to view all the various groups of reporting.</p><p>The following reports are available:</p><ul><li>Customer reports</li><li>Service reports&nbsp;</li><li>Invoice reports</li><li>Radius reports</li><li>Payment reports&nbsp;</li></ul><p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/60a54baeeb3af44cc120a567/file-RsggzdkYfG.png"></p><h3>Starting with the customer reports</h3><h4>Customer value</h4><p>Once selected you will view the graph indicating each customer's value, with their value amount listed below the graph.&nbsp; This will have both the total invoiced amount as well as the total paid amount.</p><ul><li><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/60a54d21dca0fd46b9356f76/file-Fr0OV7BLXM.png"></li></ul><p>If available, on various reporting options you are also able to filter all dates by using the following steps:</p><h4><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/60a54f1813fd125a39b45492/file-I5XNEPnlBN.png">Customer earnings</h4><p>Once selected you will view the graph indicating each customer's earnings.&nbsp; This will display a graph as well as amounts for total payments received by each customer.</p><p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/60a55103eb3af44cc120a59c/file-lnfi6t7UAb.png"></p><h4>New customers</h4><p>This section allows you to view all new customers.&nbsp; You are able to use the filter date to select the date range of new customers you would like to view.</p><p>The following information will be displayed here:</p><ul><li>The filter range, which is the date range you select</li><li>Customer ID</li><li>Customer name</li><li>Phone number</li><li>Email</li><li>Date joined</li><li>Balance</li><li>Status (enabled or disabled)</li></ul><p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/60a552621df47a61c5ad3212/file-3i8kwouwBA.png"></p><ul><li>Total customers</li></ul><ul><li>Customer debtors report</li></ul>
+## Overview
+The Reporting section in iBill.io provides powerful tools to analyze your business performance, track key metrics, and generate actionable insights. Reports are grouped by category, making it easy to find the information you need for customers, services, invoices, payments, and network activity.
+
+---
+
+## Available Reports
+- **Customer Reports**: Analyze customer value, earnings, new signups, and debtors.
+- **Service Reports**: Track service usage, activations, and churn.
+- **Invoice Reports**: Monitor invoice status, overdue amounts, and payment trends.
+- **Radius Reports**: View network authentication and session activity.
+- **Payment Reports**: Review all payment transactions and trends.
+
+---
+
+## How to Use Reports
+
+1. **Access the Reporting Section**
+   - Navigate to the Reporting area from the main menu.
+   - Select the report category you wish to view.
+
+2. **Filtering and Customizing Reports**
+   - Use date range filters to focus on specific periods.
+   - Apply additional filters (e.g., by customer, service, or status) as available.
+   - Most reports offer graphical and tabular views for easy analysis.
+
+3. **Interpreting Report Data**
+   - Graphs provide a visual summary of trends and totals.
+   - Tables list detailed data, such as customer names, invoice amounts, or payment dates.
+   - Hover over chart elements for more details.
+
+4. **Exporting Reports**
+   - Many reports can be exported as CSV or PDF for further analysis or sharing with your team.
+
+---
+
+## Best Practices
+- Review reports regularly to monitor business health and spot trends early.
+- Use filters to drill down into specific issues, such as overdue invoices or high-value customers.
+- Export and archive key reports for compliance and record-keeping.
+- Share relevant reports with your team to drive informed decision-making.
+
+---
+
+## Troubleshooting
+- If a report is missing data, check your filter settings and date ranges.
+- For slow-loading reports, try narrowing the date range or reducing filters.
+- Contact support for help with custom reporting needs.
+
+---
+
+*For more details on financial and operational management, see the Payments and Services sections.*

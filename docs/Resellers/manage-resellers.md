@@ -1,3 +1,52 @@
-# Manage Resellers
+# Managing Resellers
 
-<h2><u>Managing Resellers:</u></h2><p>In this section, you will be able to manage all of the resellers, which you have created.&nbsp;</p><p><img src="https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/609a6606a6f4b5439f4af51c/file-m3Ire2GFq4.jpg"></p><p>Once you have selected Manage Resellers, you will be taken to an overview of all the resellers you currently have. This overview will display:&nbsp;</p><ul><li>The ID of the reseller.&nbsp;</li><li>The name of the reseller</li><li>The phone number of the reseller.&nbsp;</li><li>The email address of the reseller</li><li>The date the reseller was originally registered on the system / created.&nbsp;</li><li>The status of the reseller.&nbsp;</li></ul><p>There is also an "Actions" column, where you will be able to manipulate either singular or multiple resellers at a time. The action items include the ability to:&nbsp;</p><ul><li>Disable the reseller.</li><li>Enable the reseller.</li><li>Delete the reseller</li><li>Edit the reseller</li><li>Contact the reseller via a message.&nbsp;</li><li>Contact resellers customers via SMS.</li><li>View the reseller's customers.</li><li>View the reseller's invoices.&nbsp;</li><li>View the reseller's services.&nbsp;</li></ul><p>To do so, click on the checkbox left of the ID number of the resellers, which you would like to interact with, and then click the relevant action icons.&nbsp;</p><p>Above the action items, there is a filter section, which you can use to filter the overview to display resellers according to what you are looking for</p><h1>(need the MACOS screenshot to match the rest of the screenshots on our guide)&nbsp;</h1><p><em style="background-color: initial;">Please click on our "support" button at the top right of the page if you have not found any information to assist with what you needed in this section.</em></p>
+## Overview
+The Manage Resellers section allows you to view, search, and administer all resellers in your iBill.io system. This is essential for maintaining up-to-date records, monitoring reseller activity, and ensuring smooth business operations.
+
+---
+
+## Reseller List & Actions
+When you access the Manage Resellers page, you will see a table listing all resellers with key details:
+- **ID**: Unique identifier for each reseller.
+- **Name**: Reseller or company name.
+- **Phone Number**: Primary contact number.
+- **Email Address**: Main contact email.
+- **Registration Date**: When the reseller was added.
+- **Status**: Indicates if the reseller is active or disabled.
+
+### Actions Available
+For each reseller, you can:
+- **Enable/Disable**: Activate or suspend a reseller’s account.
+- **Edit**: Update reseller details.
+- **Delete**: Remove a reseller (use with caution; this is permanent).
+- **Contact**: Send a message or email directly to the reseller.
+- **Contact Customers**: Send SMS to all customers under a reseller.
+- **View Customers**: See all customers associated with the reseller.
+- **View Invoices**: Access the reseller’s invoice history.
+- **View Services**: Review all services managed by the reseller.
+
+> **Tip:** Use the checkboxes to select multiple resellers and perform bulk actions, such as enabling, disabling, or deleting several accounts at once.
+
+---
+
+## Filtering & Searching
+- Use the filter section above the table to search for resellers by name, status, or other criteria.
+- This helps quickly locate specific resellers or groups for management or reporting.
+
+---
+
+## Best Practices
+- Regularly review reseller statuses and contact information to ensure accuracy.
+- Use bulk actions for efficiency when managing large numbers of resellers.
+- Document any changes or communications using the notes feature in each reseller’s profile.
+
+---
+
+## Troubleshooting
+- If you cannot find a reseller, double-check your filter criteria and spelling.
+- For issues with actions (e.g., enabling/disabling), ensure you have the correct permissions.
+- For further help, use the support button at the top right of the page.
+
+---
+
+*Continue to the next section for managing reseller payments.*
