@@ -1,0 +1,33 @@
+kind: pipeline
+name: docs-ci
+
+trigger:
+  event:
+    - push
+    - pull_request
+
+steps:
+  - name: test-mkdocs-build
+    image: python:3.11
+    commands:
+      - pip install mkdocs mkdocs-material
+      - mkdocs build --strict
+
+  - name: markdownlint
+    image: node:20
+    commands:
+      - npm install -g markdownlint-cli
+      - markdownlint docs/**/*.md
+
+  - name: codespell
+    image: python:3.11
+    commands:
+      - pip install codespell
+      - codespell docs/ --ignore-words-list="nd,te"
+
+  - name: links-check
+    image: python:3.11
+    commands:
+      - pip install mkdocs mkdocs-material mkdocs-link-check
+      - mkdocs build --strict
+      - mkdocs-link-check --config mkdocs.yml
