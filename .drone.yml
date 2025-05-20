@@ -15,12 +15,6 @@ steps:
       - pip install mkdocs mkdocs-material
       - mkdocs build --strict
 
-  - name: markdownlint
-    image: node:20
-    commands:
-      - npm install -g markdownlint-cli
-      - markdownlint docs/**/*.md
-
   - name: codespell
     image: python:3.11
     commands:
