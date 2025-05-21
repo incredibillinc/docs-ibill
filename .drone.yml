@@ -28,19 +28,21 @@ steps:
 
   - name: notify n8n
     image: curlimages/curl
-    # only run this after everything else, on either success or failure
     when:
       status:
         - success
         - failure
     commands:
-      - >
-        echo "DRONE_BUILD_STATUS=$DRONE_BUILD_STATUS"
+      - |
+        JSON_PAYLOAD=$(printf '{"repo":"%s","branch":"%s","status":"%s","buildUrl":"%s"}' \\
+          "${DRONE_REPO}" \\
+          "${DRONE_BRANCH}" \\
+          "${DRONE_BUILD_STATUS}" \\
+          "${DRONE_BUILD_LINK}")
+        
+        # For debugging, you can uncomment the next line to see the payload
+        echo "Sending payload: $JSON_PAYLOAD"
+
         curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \\
         -H "Content-Type: application/json" \\
-        -d "{
-          \\"repo\\": \\"${DRONE_REPO}\\",
-          \\"branch\\": \\"${DRONE_BRANCH}\\",
-          \\"status\\": \\"${DRONE_BUILD_STATUS}\\",
-          \\"buildUrl\\": \\"${DRONE_BUILD_LINK}\\"
-        }"
+        -d "$JSON_PAYLOAD"
