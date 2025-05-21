@@ -21,7 +21,7 @@ Credits allow you to adjust customer balances for overpayments, refunds, or othe
 - **Email Credit Receipt**: Send a receipt to the customer
 - **Download Credit Receipt**: Save a PDF copy for your records
 
-   ![Credit Actions](htt1ps://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/6037e3410a2dae5b58fb37e3/file-6P8utOEXas.png)
+   ![Credit Actions](https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/6037e3410a2dae5b58fb37e3/file-6P8utOEXas.png)
 
 ## Best Practices
 - Issue credits promptly for overpayments or adjustments
