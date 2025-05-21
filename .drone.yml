@@ -34,8 +34,13 @@ steps:
         - success
         - failure
     commands:
-      - echo "DRONE_BUILD_STATUS=$DRONE_BUILD_STATUS"
-      - |
-        curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \
-        -H "Content-Type: application/json" \
-        -d "{\n  \"repo\": \"${DRONE_REPO}\",\n  \"branch\": \"${DRONE_BRANCH}\",\n  \"status\": \"${DRONE_BUILD_STATUS}\",\n  \"buildUrl\": \"${DRONE_BUILD_LINK}\"\n}"
+      - >
+        echo "DRONE_BUILD_STATUS=$DRONE_BUILD_STATUS"
+        curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \\
+        -H "Content-Type: application/json" \\
+        -d "{
+          \\"repo\\": \\"${DRONE_REPO}\\",
+          \\"branch\\": \\"${DRONE_BRANCH}\\",
+          \\"status\\": \\"${DRONE_BUILD_STATUS}\\",
+          \\"buildUrl\\": \\"${DRONE_BUILD_LINK}\\"
+        }"
