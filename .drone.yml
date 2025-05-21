@@ -34,25 +34,13 @@ steps:
         - failure
     commands:
       - |
-        # First create a dynamic variable using the actual status
-        CURRENT_STATUS=$DRONE_BUILD_STATUS
-        echo "Current build status: $CURRENT_STATUS"
-        
-        # Create the JSON payload with the actual status
-        JSON_PAYLOAD=$(cat << EOF
-        {
-          "repo": "${DRONE_REPO}",
-          "branch": "${DRONE_BRANCH}",
-          "status": "${CURRENT_STATUS}",
-          "buildUrl": "${DRONE_BUILD_LINK}"
-        }
-        EOF
-        )
-        
-        # For debugging to verify the payload
-        echo "Sending payload: $JSON_PAYLOAD"
-
         # Send the webhook with properly formatted JSON
         curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \
         -H "Content-Type: application/json" \
-        -d "$JSON_PAYLOAD"
+        -d '{
+          "status": "${DRONE_BUILD_STATUS}",
+          "repo_name": "${DRONE_REPO_NAME}",
+          "commit": "${DRONE_COMMIT}",
+          "branch": "${DRONE_BRANCH}",
+          "build_url": "${DRONE_BUILD_LINK}"
+        }'
