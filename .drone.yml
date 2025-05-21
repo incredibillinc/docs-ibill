@@ -34,6 +34,7 @@ steps:
         - success
         - failure
     commands:
+      - echo "DRONE_BUILD_STATUS=$DRONE_BUILD_STATUS"
       - >
         curl -X POST 'https://n8n.ispnet.work/webhook/drone-build-complete'
         -H 'Content-Type: application/json'
