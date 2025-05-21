@@ -1,4 +1,4 @@
-# Adding Administrators
+# Adding Administrators - testing this to see if i can get it to work ... sigh 
 
 Administrators (Admins) are trusted team members with backend access to your iBill.io system. They play a vital role in managing users, configuring system settings, and ensuring the smooth operation of your ISP, billing, and RADIUS platform. Only assign admin rights to staff who require elevated privileges and understand the responsibilities involved.
 
