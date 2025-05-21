@@ -34,15 +34,25 @@ steps:
         - failure
     commands:
       - |
-        JSON_PAYLOAD=$(printf '{"repo":"%s","branch":"%s","status":"%s","buildUrl":"%s"}' \\
-          "${DRONE_REPO}" \\
-          "${DRONE_BRANCH}" \\
-          "${DRONE_BUILD_STATUS}" \\
-          "${DRONE_BUILD_LINK}")
+        # First create a dynamic variable using the actual status
+        CURRENT_STATUS=$DRONE_BUILD_STATUS
+        echo "Current build status: $CURRENT_STATUS"
         
-        # For debugging, you can uncomment the next line to see the payload
+        # Create the JSON payload with the actual status
+        JSON_PAYLOAD=$(cat << EOF
+        {
+          "repo": "${DRONE_REPO}",
+          "branch": "${DRONE_BRANCH}",
+          "status": "${CURRENT_STATUS}",
+          "buildUrl": "${DRONE_BUILD_LINK}"
+        }
+        EOF
+        )
+        
+        # For debugging to verify the payload
         echo "Sending payload: $JSON_PAYLOAD"
 
-        curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \\
-        -H "Content-Type: application/json" \\
+        # Send the webhook with properly formatted JSON
+        curl -X POST "https://n8n.ispnet.work/webhook/drone-build-complete" \
+        -H "Content-Type: application/json" \
         -d "$JSON_PAYLOAD"
