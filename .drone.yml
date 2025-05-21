@@ -25,7 +25,7 @@ steps:
     image: node:20
     commands:
       - npm install -g markdown-link-check
-      - markdown-link-check ./docs
+      - markdown-link-check --fail ./docs
 
   - name: notify n8n
     image: curlimages/curl
