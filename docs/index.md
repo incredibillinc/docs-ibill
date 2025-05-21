@@ -22,4 +22,4 @@ This site provides comprehensive, step-by-step guides and reference material for
 
 ---
 
-For further help, use the search bar or browse the navigation menu on the left. Each section is designed to guide you through every feature with clarity and confidence.
+For further help, use the search bar or browse the navigation menu on the left. Each section is designed to guide you through every feature with clarity and confidence. Test.
