@@ -22,9 +22,9 @@ steps:
       - codespell docs/ --ignore-words-list="nd,te"
 
   - name: links-check
-    image: python:3.11
+    image: node:20
     commands:
-      - pip install mkdocs mkdocs-material mkdocs-link-check
+      - npm install -g mkdocs-link-check
       - mkdocs build --strict
       - mkdocs-link-check --config mkdocs.yml
 
