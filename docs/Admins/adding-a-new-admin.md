@@ -4,6 +4,7 @@ Admins are users with backend access to your iBill.io system. They are responsib
 
 ---
 
+
 # Adding a New Admin
 
 Adding new Admin users ensures your team can securely manage the platform. Only trusted personnel should be granted admin access, as they have the ability to configure, modify, and oversee all aspects of the system.
