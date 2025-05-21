@@ -24,9 +24,8 @@ steps:
   - name: links-check
     image: node:20
     commands:
-      - npm install -g mkdocs-link-check
-      - mkdocs build --strict
-      - mkdocs-link-check --config mkdocs.yml
+      - npm install -g markdown-link-check
+      - markdown-link-check ./docs
 
   - name: notify n8n
     image: curlimages/curl
