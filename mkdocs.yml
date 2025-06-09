@@ -20,7 +20,7 @@ nav:
   - Dashboard:
       - Overview of the Main Dashboard: Dashboard/overview-of-the-main-dashboard.md
   - Hotspot:
-      - Manage Vouchers: Hotspot/hotpot-manage-vouchers.md
+      - Manage Vouchers: Hotspot/hotspot-manage-vouchers.md
       - Hotspots: Hotspot/hotspots.md
   - Invoices:
       - Managing Invoices: Invoices/managing-invoices.md
@@ -69,8 +69,8 @@ nav:
       - Templates: Setup/templates.md
 theme:
   name: material
-  logo: assets/logo.png  # Place your logo in docs/assets/logo.gif
-  favicon: assets/favicon.png  # Place your favicon in docs/assets/favicon.png
+  logo: assets/logo.png  # Place your logo in docs/assets/logo.png
+  favicon: assets/favicon.ico  # Place your favicon in docs/assets/favicon.ico
   palette:
     - scheme: default
       primary: blue  # Use a built-in color name, will be overridden by CSS
