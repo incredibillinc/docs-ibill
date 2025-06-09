@@ -1,6 +1,6 @@
 # Managing Admin Users
 
-Admins are users with backend access to your iBill.io system. They are responsible for system configuration, user management, and operational oversight. Regular users, by contrast, are valued customers or clients who access the client portal to manage their services, view invoices, and interact with your ISP’ees offerings. Admins have elevated privileges to ensure the smooth and secure operation of your ISP, billing, and RADIUS platform.
+Admins are users with backend access to your iBill.io system. They are responsible for system configuration, user management, and operational oversight. Regular users, by contrast, are valued customers or clients who access the client portal to manage their services, view invoices, and interact with your ISP’s offerings. Admins have elevated privileges to ensure the smooth and secure operation of your ISP, billing, and RADIUS platform.
 
 ---
 
