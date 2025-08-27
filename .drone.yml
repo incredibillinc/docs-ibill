@@ -24,7 +24,7 @@ steps:
   - name: links-check
     image: lycheeverse/lychee
     commands:
-      - lychee --verbose --no-progress --timeout 20 --max-concurrency 4 --accept 403 'docs/**/*.md'
+      - lychee --verbose --no-progress --timeout 20 --max-concurrency 4 --accept 200,403 'docs/**/*.md'
 
   - name: notify n8n
     image: curlimages/curl
