@@ -21,6 +21,7 @@ Adding new Admin users ensures your team can securely manage the platform. Only 
    - **Telephone Number** (optional): For contact or two-factor authentication.
 
    ![Admin Details Form](https://s3.amazonaws.com/helpscout.net/docs/assets/5b4c4e430428631d7a88ed10/images/5b4c4fb92c7d3a03f89c97aa/img-28331-1531727781-564450454.png)
+   
 3. **Create the Admin**
    Click the **Create Admin** button. The system will validate the information and create the new admin user.
 4. **Assign Permission Group**
