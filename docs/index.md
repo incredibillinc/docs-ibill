@@ -8,7 +8,7 @@ saas
 - [Audit Log](Audit Log/audit-log.md): Monitor and review all system activity and changes for compliance and transparency.
 - [Customers](Customers/add-a-new-customer.md): Add, manage, and support customer accounts and users with best practices for customer care.
 - [Dashboard](Dashboard/overview-of-the-main-dashboard.md): Gain actionable insights from your main dashboard, including key metrics and system health.
-- [Hotspot](Hotspot/hotpot-manage-vouchers.md): Set up and manage hotspot access, including voucher creation and usage tracking.
+- [Hotspot](Hotspot/hotspot-manage-vouchers.md): Set up and manage hotspot access, including voucher creation and usage tracking.
 - [Invoices](Invoices/managing-invoices.md): Create, manage, and track invoices to streamline your billing workflow.
 - [Network Map](Network Map/network-map.md): Visualize, monitor, and manage your network infrastructure for optimal performance.
 - [Payments](Payments/manage-payments.md): Oversee credits, payments, and transactions to maintain accurate financial records.
